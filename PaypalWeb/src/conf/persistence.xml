@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="PaypalWebPU" transaction-type="RESOURCE_LOCAL">
+    <class>Entity.RequestQuoteTb</class>
+    <class>Entity.StateTb</class>
+    <class>Entity.RouteTb</class>
+    <class>Entity.FuelTypeTb</class>
+    <class>Entity.MyTruckTb</class>
+    <class>Entity.DriverTb</class>
+    <class>Entity.DrivingLicenceTb</class>
+    <class>Entity.CommodityTb</class>
+    <class>Entity.TruckTypesTb</class>
+    <class>Entity.OrderTb</class>
+    <class>Entity.UserGroup</class>
+    <class>Entity.SysUsers</class>
+    <class>Entity.LocationTb</class>
+    <class>Entity.GroupMaster</class>
+    <class>Entity.RequestOrderTb</class>
+    <class>Entity.TruckModelTb</class>
+    <class>Entity.CityTb</class>
+    <class>Entity.PaymentTb</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/transporationdb"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="org.gjt.mm.mysql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="toor"/>
+    </properties>
+  </persistence-unit>
+</persistence>
